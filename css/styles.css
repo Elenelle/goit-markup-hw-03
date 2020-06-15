@@ -186,35 +186,90 @@ a {
 
   color: var(--title-text-color);
 }
-
-/*Feature чем занимаемся*/
-.directions .directions-title {
-  color: var(--primary-text-color);
-  font-style: normal;
+/*directions*/
+.directions {
+  margin-top: 94px;
+}
+.directions-section {
+  padding: 0;
+  margin-top: 50px;
+  display: flex;
+}
+.section-title {
   font-weight: bold;
   font-size: 36px;
-  text-align: center;
-  letter-spacing: 0.03em;
   line-height: 42px;
+  text-align: center;
+  padding-top: 94px;
+  margin-top: 0;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
-
-.directions .directions-item {
-  background: var(--title-text-color);
-  color: var(--white-color);
-  font-style: normal;
+.directions-section-item:not(:last-child) {
+  margin-right: 30px;
+}
+.directions-section-subtitle {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  color: var(--white-color);
+  background-color: #2f303a;
+  opacity: 80%;
+  margin-top: -60px;
 }
-.directions-item:hover,
-.directions-item:focus {
-  color: var(--accent-color);
+/*team*/
+.team {
+  margin-top: 94px;
+  background: #f5f4fa;
+}
+.team-section {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 0;
+  padding-bottom: 94px;
+  display: flex;
+}
+.team-section-item {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+}
+.team-section-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-section-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--main-text-color);
+}
+.team-section-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+.networks-section {
+  margin-top: 16px;
+  padding: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+}
+.networks-section-item:not(:last-child) {
+  margin-right: 10px;
 }
 
-/*Команда*/
+/*team
 .team .team-title {
   color: var(--primary-text-color);
   font-style: normal;
@@ -233,7 +288,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
+  
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -244,10 +299,10 @@ a {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
+  
   text-align: center;
   letter-spacing: 0.03em;
-}
+} */
 
 /*Постоянные клиенты*/
 .clients .clients-title {
