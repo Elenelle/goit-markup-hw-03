@@ -268,51 +268,26 @@ a {
 .networks-section-item:not(:last-child) {
   margin-right: 10px;
 }
-
-/*team
-.team .team-title {
-  color: var(--primary-text-color);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
+/*clients*/
+.clients {
+  margin-top: 94px;
 }
-.team .team-list {
-  list-style: none;
+.clients-section {
+  padding: 0;
+  margin-top: 50px;
+  display: flex;
 }
-.team .team-item {
-  color: var(--primary-text-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  
-  text-align: center;
-  letter-spacing: 0.03em;
+.clients-section-item:not(:last-child) {
+  margin-right: 30px;
 }
-
-.team-features .position {
-  color: var(--title-text-color);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  
-  text-align: center;
-  letter-spacing: 0.03em;
-} */
-
-/*Постоянные клиенты*/
-.clients .clients-title {
-  color: var(--primary-text-color);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
+.clients-section-item {
+  height: 90px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 5px 35px 5px 35px;
 }
 
 /*Footer*/
