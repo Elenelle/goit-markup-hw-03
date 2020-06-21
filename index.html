@@ -309,63 +309,70 @@
     </main>
     <!-- Футер-->
     <footer>
-      <ul class="logo-footer list">
-        <li>
-          <p class="footer-logo">
-            <span class="logo-web">Web</span>
-            <span class="logo-studio-footer">Studio</span>
-          </p>
-          <address>
-            <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
-            <p>
-              <a href="mailto:info@example.com" class="adress-contacts">
-                info@example.com
-              </a>
-            </p>
-            <p>
-              <a href="tel:+380991111111" class="adress-contacts">
-                +38 099 111 11 11
-              </a>
-            </p>
-          </address>
-        </li>
-        <li>
-          <p>
-            ПРИСОЕДЕНЯЙТЕСЬ
-          </p>
-          <ul class="list">
+      <section class="footer section">
+        <section class="adress-section">
+          <ul class="logo-footer list">
             <li>
+              <p>
+                <span class="logo-web">Web</span>
+                <span class="logo-studio-footer">Studio</span>
+              </p>
+            </li>
+          </ul>
+          <address>
+            <ul class="footer-contacts list">
+              <li class="adress-contact">
+                <p>г. Киев, пр-т Леси Украинки, 26</p>
+              </li>
+              <li class="email-contact">
+                <a href="mailto:info@example.com" class="address-email">
+                  info@example.com
+                </a>
+              </li>
+              <li class="phone-contact">
+                <a href="tel:+380991111111" class="address-phone">
+                  +38 099 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </section>
+        <section class="join-section">
+          <h3 class="join-title">
+            ПРИСОЕДЕНЯЙТЕСЬ
+          </h3>
+          <ul class="join list">
+            <li class="join-item">
               <a href="">
-                <img src="./images/instagram_w.png" alt="Instagram" />
+                <img
+                  src="./images/instagram_w.png"
+                  alt="Instagram"
+                  class="social-net"
+                />
               </a>
             </li>
-            <li>
+            <li class="join-item">
               <a href="">
                 <img src="./images/twitter_w.png" alt="Twitter" />
               </a>
             </li>
-            <li>
-              <a href=""
-                ><img src="./images/facebook_w.png" alt="Facebook" />
+            <li class="join-item">
+              <a href="">
+                <img src="./images/facebook_w.png" alt="Facebook" />
               </a>
             </li>
-            <li>
-              <a href=""
-                ><img src="./images/linkedin_w.png" alt="Linkedin" />
+            <li class="join-item">
+              <a href="">
+                <img src="./images/linkedin_w.png" alt="Linkedin" />
               </a>
             </li>
           </ul>
-        </li>
-        <!-- Для себя
-             <li>
-                <p>ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-                    <form action="">
-                        <input type="text">
-                            <input type="submit" value="Подписаться"><img src="./images/icon_send.png" alt="linkedin">
-                    </form>
-               </li>-->
-      </ul>
-      <p>2020 | Developed by GoIT Students</p>
+        </section>
+
+        <section>
+          <p>2020 | Developed by GoIT Students</p>
+        </section>
+      </section>
     </footer>
   </body>
 </html>

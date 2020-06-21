@@ -34,6 +34,10 @@ h3 {
 a {
   text-decoration: none;
 }
+p {
+  padding: 0px;
+  margin: 0px;
+}
 .section {
   width: 1200px;
   padding-left: 15px;
@@ -327,12 +331,18 @@ a {
 /*Footer*/
 footer {
   background-color: #2f303a;
+  height: 253px;
 }
-.logo-footer {
+.footer {
   display: flex;
   list-style: none;
 }
-.footer-logo {
+.adress-section {
+  margin-top: 48px;
+  margin-right: 69px;
+  margin-bottom: 88px;
+}
+.logo-footer {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -340,32 +350,77 @@ footer {
   line-height: 26px;
   /* identical to box height */
   letter-spacing: 0.03em;
-  margin-top: 48px;
+  margin-bottom: 10px;
 }
 .logo-studio-footer {
   color: var(--white-color);
 }
-.adress {
+.adress-contact {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--white-color);
+  margin-bottom: 9px;
 }
-.adress-contacts {
+.email-contact {
+  margin-bottom: 9px;
+}
+.address-email {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px solid #000000;
+}
+.phone-contact {
+  margin-top: 9px;
+}
+.address-phone {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
+.join-section {
+  margin-top: 56px;
+  margin-right: 94px;
+  margin-bottom: 116px;
+}
+.join-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 21px;
+}
+.join {
+  display: flex;
+}
+.join-item {
+  padding: 12px;
+  background-color: var(--white-color);
+  opacity: 10%;
+}
+.join-item:not(:last-child) {
+  padding-right: 34px;
+}
 /*Портфолио*/
 
 /*Продукты и услуги студии*/
