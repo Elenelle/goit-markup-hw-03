@@ -329,18 +329,18 @@ p {
   padding: 5px 35px 5px 35px;
 }
 /*Footer*/
-footer {
+.footer-content {
   background-color: #2f303a;
-  height: 253px;
 }
 .footer {
   display: flex;
-  list-style: none;
+  align-items: baseline;
 }
 .adress-section {
+  width: 231px;
   margin-top: 48px;
   margin-right: 69px;
-  margin-bottom: 88px;
+  margin-bottom: 28px;
 }
 .logo-footer {
   font-family: Raleway;
@@ -397,7 +397,8 @@ footer {
 .join-section {
   margin-top: 56px;
   margin-right: 94px;
-  margin-bottom: 116px;
+  margin-bottom: 56px;
+  width: 206px;
 }
 .join-title {
   font-family: Roboto;
@@ -413,13 +414,28 @@ footer {
 .join {
   display: flex;
 }
-.join-item {
-  padding: 12px;
-  background-color: var(--white-color);
-  opacity: 10%;
+.button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0px solid rgba(255, 255, 255, 0.1);
+  width: 44px; /* Ширина кнопки */
+  height: 44px; /* Высота */
+  border-radius: 30px;
 }
 .join-item:not(:last-child) {
-  padding-right: 34px;
+  padding-right: 10px;
+}
+.site-development {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 18px;
+  padding-bottom: 24px;
+}
+.developed {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.4);
 }
 /*Портфолио*/
 
