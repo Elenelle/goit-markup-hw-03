@@ -1,36 +1,64 @@
+:root {
+  --text-color: #757575;
+  --main-text-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+}
+
 html {
   box-sizing: border-box;
-  position: relative;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
-/*color: #212121 цвет главного текста
-color: #757575 цвет вторичного текста
-#ffffff белый
-#2196F3 акцент*/
-
 body {
-  --main-text-color: #212121;
-  --text-color: #757575;
-  --white-color: #ffffff;
-  --accent-color: #2196f3;
   font-family: Roboto, sans-serif;
   font-style: normal;
   background-color: var(--white-color);
+  color: var(--title-text-color);
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
 }
 .section {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .page-header {
   align-items: center;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+}
+.nav-logo,
+.nav-sections,
+.nav-sections-contacts {
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 85px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -38,9 +66,6 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
-  margin-right: 85px;
-  align-items: center;
-  display: flex;
   /* identical to box height */
   letter-spacing: 0.03em;
 }
@@ -50,41 +75,20 @@ body {
 .logo-studio {
   color: var(--main-text-color);
 }
-.logo-footer {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
-  /* identical to box height */
-  letter-spacing: 0.03em;
-}
-.logo-studio-footer {
-  color: var(--white-color);
-}
-.header-content {
-  align-items: center;
-}
-.header-content,
-.nav-sections,
-.nav-contacts {
-  display: flex;
-}
-.nav-sections {
-  margin-right: auto;
+.nav-sections:not(:last-child) {
+  margin-right: 305px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
+.nav-sections-contacts {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .nav-contacts:not(:last-child) {
   margin-right: 30px;
-}
-a {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-  padding: 0px;
 }
 .list-item {
   font-family: Roboto;
@@ -108,16 +112,18 @@ a {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
 }
-
 /* Эффективные решения для вашего бизнеса */
 .main-section {
   background-color: #2f303a;
   opacity: 80%;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main-title {
   font-weight: 900;
@@ -125,24 +131,17 @@ a {
   line-height: 60px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
-  margin: 0;
-
+  margin-left: 452px;
+  margin-right: 452px;
   color: var(--white-color);
-}
-.primary-button {
-  padding-top: 30px;
-  padding-bottom: 200px;
-  margin: 0;
+  margin-bottom: 30px;
 }
 .main-button-link {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   padding: 10px 32px;
-  box-shadow: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--white-color);
@@ -225,12 +224,13 @@ a {
 .team {
   margin-top: 94px;
   background: #f5f4fa;
+  width: 1600px;
+  height: 702px;
 }
 .team-section {
-  margin-top: 50px;
-  margin-bottom: 0px;
-  padding: 0;
-  padding-bottom: 94px;
+  width: 1170px;
+  height: 422px;
+  margin: 186px 215px 94px 215px;
   display: flex;
 }
 .team-section-item {
@@ -291,6 +291,18 @@ a {
 }
 
 /*Footer*/
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+.logo-studio-footer {
+  color: var(--white-color);
+}
 footer {
   background-color: #2f303a;
 }
