@@ -59,10 +59,6 @@ p {
   display: flex;
   align-items: center;
 }
-.nav-sections-contacts {
-  display: flex;
-  align-items: right;
-}
 .nav-logo {
   margin-top: 24px;
   margin-bottom: 25px;
@@ -91,13 +87,6 @@ p {
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-sections-contacts {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-.nav-contacts:not(:last-child) {
-  margin-right: 30px;
-}
 .list-item {
   font-family: Roboto;
   font-style: normal;
@@ -111,7 +100,19 @@ p {
 .list-item:focus {
   color: var(--accent-color);
 }
+.nav-sections-contacts {
+  display: flex;
+  justify-content: right;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.nav-contacts:not(:last-child) {
+  margin-right: 30px;
+}
 .contacts {
+  display: flex;
+  align-items: center;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -123,6 +124,9 @@ p {
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
+}
+.contacts-img {
+  margin-right: 10px;
 }
 /* Эффективные решения для вашего бизнеса */
 .main-section {
